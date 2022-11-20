@@ -18,33 +18,33 @@
         <div class="btn">
             <table>
                 <tr>
-                    <td><button class="btn-operator" id="clear">AC</button></td>
-                    <td><button class="btn-operator" id="negative">+/-</button></td>
-                    <td><button class="btn-operator" id="percent">%</button></td>
-                    <td><button class="btn-operator" id="divide">&divide;</button></td>
+                    <td><input type="button" class="btn-operator" id="clear" value="AC" onclick="clear()"/></td>
+                    <td><input type="button" class="btn-operator" id="negative" value="+/-" /></td>
+                    <td><input type="button" class="btn-operator" id="percent" value="%"></td>
+                    <td><input type="button" class="btn-operator" id="divide" value="&divide;" /></td>
                 </tr>
                 <tr>
-                    <td><button class="btn-number" id="num-seven">7</button></td>
-                    <td><button class="btn-number" id="num-eight">8</button></td>
-                    <td><button class="btn-number" id="num-nine">9</button></td>
-                    <td><button class="btn-operator" id="multiply">&times;</button></td>
+                    <td><input type="button" class="btn-number" id="num-seven" value="7" onclick="makeNum(7)"/></td>
+                    <td><input type="button" class="btn-number" id="num-eight" value="8" onclick="makeNum(8)"/></td>
+                    <td><input type="button" class="btn-number" id="num-nine" value="9" onclick="makeNum(9)"/></td>
+                    <td><input type="button" class="btn-operator" id="multiply" value="&times;" /></td>
                 </tr>
                 <tr>
-                    <td><button class="btn-number" id="num-four">4</button></td>
-                    <td><button class="btn-number" id="num-five">5</button></td>
-                    <td><button class="btn-number" id="num-six">6</button></td>
-                    <td><button class="btn-operator" id="minus">-</button></td>
+                    <td><input type="button" class="btn-number" id="num-four" value="4" onclick="makeNum(4)"/></td>
+                    <td><input type="button" class="btn-number" id="num-five" value="5" onclick="makeNum(5)"/></td>
+                    <td><input type="button" class="btn-number" id="num-six" value="6" onclick="makeNum(6)"/></td>
+                    <td><input type="button" class="btn-operator" id="minus" value="-" /></td>
                 </tr>
                 <tr>
-                    <td><button class="btn-number" id="num-one">1</button></td>
-                    <td><button class="btn-number" id="num-two">2</button></td>
-                    <td><button class="btn-number" id="num-three">3</button></td>
-                    <td><button class="btn-operator" id="add">+</button></td>
+                    <td><input type="button" class="btn-number" id="num-one" value="1" onclick="makeNum(1)"/></td>
+                    <td><input type="button" class="btn-number" id="num-two" value="2" onclick="makeNum(2)"/></td>
+                    <td><input type="button" class="btn-number" id="num-three" value="3" onclick="makeNum(3)"/></td>
+                    <td><input type="button" class="btn-operator" id="add" value="+" /></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button class="btn-number" id="zero">0</button></td>
-                    <td><button class="btn-number" id="dot">.</button></td>
-                    <td><button class="btn-operator" id="equal">=</button></td>
+                    <td colspan="2"><input type="button" class="btn-number" id="zero" value="0" /></td>
+                    <td><input type="button" class="btn-number" id="dot" value="." /></td>
+                    <td><input type="button" class="btn-operator" id="equal" value="=" /></td>
                 </tr>
             </table>
         </div>
