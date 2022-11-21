@@ -1,5 +1,5 @@
-var firstNum = "";
-var result = "";
+var firstNum = 0;
+var result = 0;
 var operator = "";
 
 function makeNum(num) {
@@ -9,6 +9,27 @@ function makeNum(num) {
     document.getElementById("text").innerHTML = firstNum;
 }
 
-function clear(){
-    
+function allClear(){
+    firstNum = "";
+    result = "";
+    operator = "";
+    document.getElementById("text").innerHTML = "0";
+}
+
+function ope(operatorPassed){
+    operator = operatorPassed;
+    result = firstNum;
+    firstNum = "";
+    document.getElementById("text").innerHTML = "0";
+
+}
+
+function calculate(){
+    switch (operator){
+        case '+' : result = result + firstNum ; break;
+        case '-' : result = result - firstNum ; break;
+        case '*' : result = result * firstNum ; break;
+        case '/' : result = result / firstNum ; break;
+    }
+    document.getElementById("text").innerHTML = result;
 }
