@@ -1,5 +1,5 @@
-var firstNum = 0;
-var result = 0;
+var firstNum = "";
+var result = "";
 var operator = "";
 
 function makeNum(num) {
@@ -20,16 +20,16 @@ function ope(operatorPassed){
     operator = operatorPassed;
     result = firstNum;
     firstNum = "";
-    document.getElementById("text").innerHTML = "0";
+    document.getElementById("text").innerHTML = operator;
 
 }
 
 function calculate(){
     switch (operator){
-        case '+' : result = result + firstNum ; break;
-        case '-' : result = result - firstNum ; break;
-        case '*' : result = result * firstNum ; break;
-        case '/' : result = result / firstNum ; break;
+        case '+' : result = parseInt(result) + parseInt(firstNum) ; break;
+        case '-' : result = parseInt(result) - parseInt(firstNum) ; break;
+        case '*' : result = parseInt(result) * parseInt(firstNum) ; break;
+        case '/' : result = parseInt(result) / parseInt(firstNum) ; break;
     }
     document.getElementById("text").innerHTML = result;
 }
