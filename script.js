@@ -3,25 +3,24 @@ var result = "";
 var operator = "";
 
 function makeNum(num) {
-    if(document.getElementById("text").innerHTML.toString != 0){
+    if(document.getElementById("ans").innerHTML.toString != 0){
         firstNum = firstNum + num;
     }
-    document.getElementById("text").innerHTML = firstNum;
+    document.getElementById("ans").innerHTML = result + operator + firstNum;
 }
 
 function allClear(){
     firstNum = "";
     result = "";
     operator = "";
-    document.getElementById("text").innerHTML = "0";
+    document.getElementById("ans").innerHTML = "0";
 }
 
 function ope(operatorPassed){
     operator = operatorPassed;
     result = firstNum;
     firstNum = "";
-    document.getElementById("text").innerHTML = operator;
-
+    document.getElementById("ans").innerHTML = result + operator;
 }
 
 function calculate(){
@@ -31,5 +30,5 @@ function calculate(){
         case '*' : result = parseInt(result) * parseInt(firstNum) ; break;
         case '/' : result = parseInt(result) / parseInt(firstNum) ; break;
     }
-    document.getElementById("text").innerHTML = result;
+    document.getElementById("ans").innerHTML = result;
 }
