@@ -21,22 +21,27 @@ body {
 #text {
     padding: 0px 5px;
     text-align: end;
+    /* font-size: 55px; */
+}
+
+#text h1 {
+    /* padding: 0px 5px; */
     font-size: 55px;
 }
 
-#text h1{
-    padding: 0px 5px;
-    font-size: 55px;
+#text h3 {
+    color: #a0a0a0;
+    font-size: 35px;
 }
 
 input {
     height: 60px;
     width: 60px;
     border: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     margin: 5px;
     /* padding: 5px; */
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     transition: all 200ms ease;
 }
@@ -46,32 +51,32 @@ input {
 }
 
 #clear {
-    background-color: #a0a0a0;
+    background-color: #ADE792;
     color: #000;
 }
 
 #negative {
-    background-color: #a0a0a0;
+    background-color: #ADE792;
     color: #000;
 }
 
 #percent {
-    background-color: #a0a0a0;
+    background-color: #ADE792;
     color: #000;
 }
 
 .btn-operator {
-    background-color: #f59907;
-    color: aliceblue;
+    background-color: #6ECCAF;
+    color: black;
 }
 
-.btn-number{
+.btn-number {
     background-color: #313131;
     color: aliceblue;
 
 }
 
-input:active{
+input:active {
     background-color: aliceblue;
     color: #313131;
 }
