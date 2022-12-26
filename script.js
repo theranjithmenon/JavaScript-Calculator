@@ -40,5 +40,5 @@ function calculate(){
     }
     document.getElementById("opeText").innerHTML = secondNum + operator + firstNum;
     document.getElementById("ans").innerHTML = result;
-    secondNum = result;
+    firstNum = result;
 }
