@@ -37,6 +37,7 @@ function calculate(){
         case '-' : result = parseInt(secondNum) - parseInt(firstNum) ; break;
         case '*' : result = parseInt(secondNum) * parseInt(firstNum) ; break;
         case '/' : result = parseInt(secondNum) / parseInt(firstNum) ; break;
+        case '+/-' : firstNum = 0-firstNum;
     }
     document.getElementById("opeText").innerHTML = secondNum + operator + firstNum;
     document.getElementById("ans").innerHTML = result;
